@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name" : "Job-Finder",
+    "name" : "JWT-Basics",
     "builds": [
       {
         "src": "app.js",
