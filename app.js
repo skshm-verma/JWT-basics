@@ -1,5 +1,6 @@
 require('dotenv').config();
 require('express-async-errors');
+const path = require('path');
 
 const express = require('express');
 const app = express();
@@ -10,7 +11,7 @@ const mainRouter = require('./src/routes/main');
 const notFoundMiddleware = require('./src/middleware/not-found');
 const errorMiddleware = require('./src/middleware/error-handler');
 
-app.use(express.static('./public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 
