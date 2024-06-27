@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "name" : "Job-Finder",
+    "builds": [
+      {
+        "src": "app.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/api/v1" }
+    ]
+  }
