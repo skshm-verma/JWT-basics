@@ -10,7 +10,7 @@ const mainRouter = require('./src/routes/main');
 const notFoundMiddleware = require('./src/middleware/not-found');
 const errorMiddleware = require('./src/middleware/error-handler');
 
-app.use(express.static('./public'));
+// app.use(express.static('./public'));
 app.use(express.json());
 
 
